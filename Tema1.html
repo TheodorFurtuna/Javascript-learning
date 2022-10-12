@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1>1.1.ES6 - Metode (exemple, explicatii)</h1>
+
+<h2>JavaScript methods</h2>
+<p>JavaScript methods are actions that can be performed on objects.</p>
+<p>A JavaScript method is a property containing a function definition.</p>
+<p>Methods are functions stored as object properties.</p>    
+
+<h2>Accessing Object Methods</h2>
+<p>You access an object method with the following syntax: <b>objectName.methodName()</b></p>
+<p>You will typically describe <b>numeComplet</b> as a method of the person object, and <b>numeComplet</b> as a property.</p>
+<p>The <b>numeComplet</b> property will execute (as a function) when it is invoked with ().</p>
+<p>This example accesses the <b>numeComplet</b> method of a person object:</p>
+<p>name = person.numeComplet();</p>
+<p>If you access the numeComplet property, without (), it will return the function definition:</p>
+<p>name = person.numeComplet;</p>
+
+<h2>Adding a Method to an Object</h2>
+<p>Adding a new method to an object is easy:</p>
+<p>person.name = function () {</p>
+<p>return this.nume + " " + this.prenume;</p>
+<p>};</p>
+
+<h2>What is <i>this</i> Keyword</h2>
+<p>Which object depends on how <b>this</b> is being invoked (used or called).</p>
+<p>The <b>this</b> keyword refers to different objects depending on how it is used:</p>
+<p><b>this</b> is not a variable. It is a keyword. You cannot change the value of <b>this</b>.</p>
+<p>In this example, <b>this</b> refers to the <b>person</b> object.</p>
+<p>Because <b>numeComplet</b> is a method of the person object.</p>
+
+<h3>Javascript workspace:</h3>
+<p id="demo1"></p>
+<p id="demo2"></p>
+<p id="demo3"></p>
+<p id="demo4"></p>
+<p id="demo5"></p>
+<p id="demo6"></p>
+<button type="button" onclick="myFunction()">Count!</button>
+<p id="demo7">0</p>
+
+<script src="Tema1.js"></script>
+</body>
+</html>
